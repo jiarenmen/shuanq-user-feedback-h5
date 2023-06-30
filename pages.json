@@ -1,0 +1,61 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/common/feedbackIndex/feedbackIndex",
+			"style": {
+				"navigationBarTitleText": "反馈帮助",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/common/feedbackList/feedbackList",
+			"style": {
+				"navigationBarTitleText": "我的反馈",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/common/feedback/feedback",
+			"style": {
+				"navigationBarTitleText": "提交反馈",
+				"enablePullDownRefresh": false,
+				"backgroundColor":"#FFFFFF"
+			}
+
+		},
+
+		{
+			"path": "pages/common/helpDetail/helpDetail",
+			"style": {
+				"navigationBarTitleText": "帮助详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/common/feedbackDetail/feedbackDetail",
+			"style": {
+				"navigationBarTitleText": "反馈详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/common/showImage/showImage",
+			"style": {
+				"navigationBarTitleText": "图片预览",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#000000",
+				"app-plus": {
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "意见反馈",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8"
+	}
+}
