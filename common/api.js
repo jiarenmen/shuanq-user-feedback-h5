@@ -30,7 +30,7 @@ export async function fileUpdate(file) {
                 if (data.code == 1) {
                     resolve(data.data.file_id)
                 } else {
-                    reject(data.message)
+                    reject(data.msg)
                 }
             },
             fail: ({errMsg}) => {

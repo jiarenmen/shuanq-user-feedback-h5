@@ -24,6 +24,8 @@ export function formatTime(time, option) {
 		return parseTime(time, option)
 	} else {
 		return (
+			d.getFullYear() +
+			'年' +
 			d.getMonth() +
 			1 +
 			'月' +

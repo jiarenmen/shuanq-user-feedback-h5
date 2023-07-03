@@ -66,6 +66,6 @@
             "mode" : "hash",
             "base" : "/view/feedback/default/"
         },
-        "template" : "template.h5.html"
+        "template" : "public/index.html"
     }
 }

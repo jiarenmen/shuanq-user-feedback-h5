@@ -61,7 +61,7 @@
 			}).then((response) => {
 				const res = response.data
 				if (res.code === 1) {
-					this.classify_list=[...this.classify_list,...res.data.list]
+					this.classify_list=[...res.data.list,...this.classify_list]
 				}else{
 					uni.showToast({
 						icon: "none",
@@ -100,7 +100,7 @@
 								this.btnLoading=false
 								uni.showToast({
 									icon: "none",
-									title: '第' + (i + 1) + '张,' + errmsg
+									title: '第' + (i + 1) + '张图片上传失败,' + errmsg
 								});
 								continue_submit=false
 							})
@@ -131,10 +131,19 @@
 						this.sendData.content=""
 						this.sendData.contact_info=""
 						this.$refs.files.clearFiles()
+						
+						setTimeout(()=>{
+							uni.redirectTo({
+								url: '/pages/common/feedbackList/feedbackList',
+								success: res => {},
+								fail: () => {},
+								complete: () => {}
+							});
+						},600)
 				    }else{
 						uni.showToast({
 							icon: "none",
-							title: res.message
+							title: res.msg
 						});
 					}
 				})
