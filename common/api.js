@@ -27,7 +27,7 @@ export async function fileUpdate(file) {
             success: async (res) => {
                 const data = JSON.parse(res.data)
 				console.log("上传结果",data)
-                if (data.code == 1) {
+                if (data.code === 1) {
                     resolve(data.data.file_id)
                 } else {
                     reject(data.msg)
